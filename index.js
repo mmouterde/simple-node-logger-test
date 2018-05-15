@@ -5,7 +5,8 @@ app.get('/', function (req, res) {
     console.log(req.query);
     res.send("");
 });
+var port = process.env.PORT || 3000;
 
-app.listen(80, function () {
+app.listen(port, function () {
     console.log('Ok')
 });
